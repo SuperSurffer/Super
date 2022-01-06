@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="css/bg.css">
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="images/icon3.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f2b1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: relative;
+  top: 50px;
+  width: 700px;
+  padding: 16px;
+  border-radius: 20px;
+  font-family: 'Allerta';
+  background-color: rgb(255, 255, 255);
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #149919;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #ffffff;
+  text-align: center;
+}
+</style>
+<body>
+
+<form action="signup.php" method="post" autocomplete="off">
+  <div class="container">
+    <h1>Sign Up</h1>
+    
+    <hr>
+
+    <label for="email"><b>Username</b></label><br>
+    <input type="text" placeholder="Username(1-10 Character)" name="username" id="Username" required><br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Password" name="password" id="Password" required>
+
+    <label for="name"><b>Name</b></label><br>
+    <input type="text" placeholder="Name" name="name" id="Name" required>
+
+    <label for="telephone"><b>Telephone number</b></label><br>
+    <input type="text" placeholder="Telephone" name="telephone" id="Telephone" required>
+
+    
+    <button type="submit" class="registerbtn">REGISTER</button>
+    <div class="need2">
+    <p>Already have an account?<a href="login.html">&nbsp; Log in</a>.</p> 
+  </div>
+  </div>
+ 
+    
+  </div>
+</form>
+
+</body>
+</html>

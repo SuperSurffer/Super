@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up failed</title>
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="images/icon3.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+     body {
+  background-color: #f3f2b1;
+}
+h1{
+    position: relative;
+    left: 60px;
+    bottom: 10px;
+    font-family: 'Bai Jamjuree';
+    font-size: 30px;
+}
+h2{
+    position: relative;
+    left: 120px;
+    bottom: 50px;
+    font-family: 'Bai Jamjuree';
+    font-size: 30px;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+.container {
+  position: relative;
+  top: 100px;
+  width: 600px;
+  height:250px ;
+  padding: 16px;
+  border-radius: 20px;
+  font-family: 'Allerta';
+  background-color: rgb(255, 255, 255);
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.registerbtn {
+  background-color: #ff0000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+  position: relative;
+  left: 82px;
+  bottom: 20px;
+  font-family: 'Allerta';
+}
+</style>
+<body>
+
+    <form action="login.php" method="post" autocomplete="on">
+        <div class="container">
+            <div class="register row">
+                <h1>The user account has been used! </h1><br>
+                <h2>Please use another name.</h2>
+          
+        <div class="register">
+            
+            <input class="registerbtn" onclick="document.location='signup.html'" type="button" value="BACK TO SIGN UP" id="successButton">
+            </div>
+
+
+
+
+
+  
+        
+</body>
+
+
+</html>

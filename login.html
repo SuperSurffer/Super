@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log In</title>
+  <link rel="stylesheet" type="text/css" href="css/bg.css">
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="images/icon3.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f2b1;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  top: 100px;
+  width: 500px;
+  padding: 16px;
+  border-radius: 20px;
+  font-family: 'Allerta';
+  background-color: rgb(255, 255, 255);
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.registerbtn {
+  background-color: #149919;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #ffffff;
+  text-align: center;
+}
+</style>
+<body>
+
+<form action="login.php" method="post" autocomplete="on">
+  <div class="container">
+    <h1>Log In</h1>
+    
+    <hr>
+
+    <label for="email"><b>Username</b></label><br>
+    <input type="text" name="username"  placeholder="Username" id="username" required><br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" name="password"  placeholder="Password" id="password" required>
+
+  
+    <hr>
+    <button type="submit" class="registerbtn">LOG IN</button>
+
+    <div class="need">
+    <p>Need an account?<a href="signup.html">&nbsp; Sign up</a>.</p> 
+  </div>
+  </div> 
+  </div>
+  
+</form>
+
+</body>
+</html>
